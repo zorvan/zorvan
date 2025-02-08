@@ -10,6 +10,11 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ secrets.METRICS_TOKEN }}
+        run: echo "$GITHUB_CONTEXT"
+        
       - uses: lowlighter/metrics@latest
         with:
           # Your GitHub token
@@ -59,7 +64,3 @@ jobs:
           plugin_notable: yes
           plugin_notable_from: organization
           plugin_notable_types: commit
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ secrets.METRICS_TOKEN }}
-        run: echo "$GITHUB_CONTEXT"
