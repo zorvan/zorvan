@@ -22,7 +22,7 @@ jobs:
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
           committer_message: "chore: update metrics"
-
+          output_action: none
           # Options
           user: zorvan
           template: classic
