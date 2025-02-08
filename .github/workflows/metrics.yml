@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: Dump GitHub context
         env:
-          GITHUB_CONTEXT: ${{ secrets.REPO_METRICS_TOKEN }}
-        run: echo "$GITHUB_CONTEXT"
+          GITHUB_CONTEXT1: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_CONTEXT2: ${{ secrets.REPO_METRICS_TOKEN }}
+          GITHUB_CONTEXT3: ${{ env.PUB_METRICS_TOKEN }}
+        run: echo "GITHUB_CONTEXT1 = $GITHUB_CONTEXT   GITHUB_CONTEXT2 = $GITHUB_CONTEXT2   GITHUB_CONTEXT3 = $GITHUB_CONTEXT3"
         
       
