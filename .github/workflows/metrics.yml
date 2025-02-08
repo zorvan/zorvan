@@ -21,6 +21,8 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          run: |
+            echo "token ================> $token"
           committer_message: "chore: update metrics"
           output_action: none
           # Options
