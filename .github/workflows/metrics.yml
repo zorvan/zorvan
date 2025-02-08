@@ -21,8 +21,6 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-          run: |
-            echo "token ================> $token"
           committer_message: "chore: update metrics"
           output_action: none
           # Options
@@ -59,5 +57,7 @@ jobs:
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
           plugin_notable: yes
+        run: |
+            echo "token ================> $token"
           plugin_notable_from: organization
           plugin_notable_types: commit
