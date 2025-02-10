@@ -5,8 +5,8 @@
 </p>
 
 
-- 🔭 I’m currently working at [KnowBe4](https://xarv.ir) as CTO
+- 🔭 I’m currently working at [Xarv](https://xarv.ir) as CTO
 - 💬 Ask me about **Cryptography, Hardware Security, Rust and Blockchain**
-- 📫 How to reach me: [linkedin](https://linkedin.com/in/amin-razavi-sousan) on Linkedin
+- 📫 How to reach me: [linkedin](https://linkedin.com/in/amin-razavi-sousan)
 - ⚡ Meaning of Life: Relational Critical Engineering
 
